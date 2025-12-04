@@ -1,20 +1,17 @@
-# Prompt Engineering Lab with n8n
-
-![n8n workflow with OpenAI](./images/openai-n8n-1.png)
+# Prompt Engineering Lab 
 
 ---
 
 ## Introduction
 
-In this lab, you will explore the fundamentals of **n8n workflow automation** and **prompt engineering**. You will learn how to build automated workflows in n8n and understand the principles of prompt engineering to effectively communicate with AI models.
+In this lab, you will explore the fundamentals of **prompt engineering**. You will understand the principles of prompt engineering to effectively communicate with AI models.
 
 ### Learning Objectives
 
 By the end of this lab, you will be able to:
 
-- **Build and configure** workflows in n8n
 - **Understand** what prompt engineering is and why it matters
-- **Apply** prompt engineering techniques in your n8n workflows
+
 
 ---
 
@@ -22,7 +19,6 @@ By the end of this lab, you will be able to:
 
 Before beginning this lab, ensure you have completed the following:
 
-- **New to n8n ! ** Set up your account: **[Click Here](../../Module%200%20-%20Prerequisite/n8n-loginSetup/Doc.md)**
 - **Generate your OpenAI API key:** **[Click Here](https://youtu.be/YyaZ8zaGS-Q?si=bOw8C_TWgMg8S1hU)**
 - **Download n8n workflow file:** **[Click Here](https://drive.google.com/file/d/1nJHmpSukVBuoAp0d6lSdBSmUfx-jqu8z/view?usp=sharing)**
 - **Download reference document:** **[Click Here](https://drive.google.com/file/d/1zUUPpyFVsLXPzvnbjCDYtEDFmmwh4M3C/view?usp=sharing)**
@@ -114,140 +110,7 @@ resources.
 
 ---
 
-## Understanding n8n
 
-**n8n** is a powerful, open-source workflow automation tool that allows you to connect various apps and services to automate tasks _without writing code_. It provides a visual interface where you can design complex workflows using a node-based system.
-
-### What is n8n?
-
-_n8n_ (pronounced "n-eight-n") is a fair-code licensed workflow automation tool. It enables you to:
-
-- **Automate repetitive tasks** across multiple applications
-- **Integrate different services** and APIs seamlessly
-- **Build custom workflows** with a visual drag-and-drop interface
-- **Self-host or use cloud** — Deploy on your own infrastructure or use n8n Cloud
-- **Extend functionality** with custom nodes and JavaScript code
-
-### Key Features of n8n
-
-- **300+ Integrations** — Connect to popular services like Google Sheets, Slack, GitHub, databases, and more
-- **Visual Workflow Editor** — Intuitive drag-and-drop interface for building automation
-- **Flexible Execution** — Run workflows on schedule, webhook triggers, or manual execution
-- **Data Transformation** — Process and transform data between different services
-- **Error Handling** — Built-in error workflows and retry mechanisms
-- **Open Source** — Free to use and customize according to your needs
-
----
-
-## Hands-On: Building Your First Prompt Engineering Workflow
-
-In this practical section, you will build a complete workflow that demonstrates the power of prompt engineering in n8n.
-
-### Step 1: Set Up Your n8n Account
-
-If you haven't already set up your n8n account, follow the **[Prerequisites](#prerequisites)** section above to:
-
-1. **Create** your n8n account (cloud or self-hosted)
-2. **Log in** to your n8n dashboard
-
-> Once logged in, you're ready to create your first workflow!
-
----
-
-### Step 2: Create a New Workflow
-
-Once you are logged in, you will be redirected to your dashboard.
-
-1. Locate and click on the **Create Workflow** button
-2. A new blank workflow canvas will open
-3. You're now ready to start building your automation!
-
-![](./images/img-4.png)
-
----
-
-### Step 3: Import the n8n Workflow
-
-Now, let's import the pre-built workflow that you downloaded from the **[Prerequisites](#prerequisites)** section.
-
-1. In the n8n canvas, look for the **menu icon** (three dots or hamburger menu) in the top-right corner
-2. Click on the menu and select **Import from File** (or **Import Workflow**)
-3. A file dialog will open
-4. Navigate to where you saved the downloaded n8n workflow JSON file
-5. Select the workflow file and click **Open**
-6. The workflow will be imported and displayed on your canvas
-7. Click **Save** to save the imported workflow
-
-> **💡 Tip:** If you encounter any errors during import, ensure you downloaded the correct workflow file and that it's in _JSON format_.
-
-![](./images/img-5.png)
-
----
-
-### Step 4: Review the Imported Workflow
-
-Now that you have imported the workflow, your canvas will display the complete workflow structure.
-
-**Take a moment to:**
-
-1. **Observe** the different nodes and their connections
-2. **Notice** how the workflow is structured
-3. **Identify** the key components (triggers, AI nodes, processing nodes)
-
-Your workflow will look something like this, as you can see in the image below:
-
-![](./images/img-6.png)
-
----
-
-### Step 5: Configure Your OpenAI API Key
-
-Now you need to configure your OpenAI API key to enable the workflow to communicate with the AI model.
-
-1. Click on the **OpenAI Chat Model** node in your workflow
-2. In the node parameters panel, locate the **Credentials** dropdown
-3. Click on the dropdown and select **Create New Credential**
-4. A credentials configuration window will appear
-5. In the **API Key** input field, paste your OpenAI API key (obtained from Prerequisites)
-6. Click the **Save** button to save your credentials
-7. Close the credentials window and return to the workflow canvas
-
-> **⚠️ Important:** Keep your API key secure and _never_ share it publicly. The key is stored securely in n8n.
-
-![](./images/img-3.gif)
-
----
-
-### Step 6: Test Your Workflow with Chat Interface
-
-Now it's time to test your workflow and interact with the AI agent!
-
-1. Look for the **Open Chat** button (usually in the top-right corner or workflow panel)
-2. Click on the **Open Chat** button
-3. A chat interface section will appear on your screen
-
-![](./images/img-9.png)
-
-4. In the chat interface, locate the **file upload** option or icon
-5. Click to upload and select the **reference document** that was provided in the prerequisites
-6. Once the file is uploaded, start providing prompts in the **chat input field**
-7. Type your questions or instructions related to the document content
-8. Press **Enter** or click **Send** to submit your prompt
-9. Observe how the AI agent processes your prompt and responds based on the document context
-
-![](./images/img-8.png)
-
-> **💡 Tip:** _Experiment_ with different types of prompts (instruction-based, role-based, specific questions) to see how the AI responds differently based on your prompt engineering techniques.
-
----
-
-### Result
-
-Now you can see the results! The AI agent **successfully processes** your prompts and provides **accurate responses** based on the uploaded document content.
-
-![](./images/img-7.png)
-
----
 
 ## Improving Prompt Quality: From Basic to Optimized
 
@@ -605,19 +468,16 @@ Extract 'termination for cause' using a bullet list, then as a paragraph. Compar
 
 ## Conclusion
 
-Congratulations! You've completed the **Prompt Engineering Lab with n8n**. Throughout this lab, you have:
+Congratulations! You've completed the **Prompt Engineering Lab**. Throughout this lab, you have:
 
 ✅ **Learned** the fundamentals of prompt engineering and its importance  
-✅ **Built** a complete workflow in n8n with AI integration  
 ✅ **Explored** different prompt engineering techniques (instruction-based, role-based)
 
 ---
 
 ### Additional Resources
 
-- **n8n Documentation:** **[https://docs.n8n.io](https://docs.n8n.io)**
 - **OpenAI Best Practices:** **[https://platform.openai.com/docs/guides/prompt-engineering](https://platform.openai.com/docs/guides/prompt-engineering)**
-- **n8n Community Forum:** **[https://community.n8n.io](https://community.n8n.io)**
 
 ---
 
