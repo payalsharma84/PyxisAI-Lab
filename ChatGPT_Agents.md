@@ -1,6 +1,5 @@
-# Analysing a contract and generating results for key terms and storing them in a CRM
-
-In this tutorial we will learn how to create a ChatGPT agent that can extract key terms and store them in a CRM for an uploaded contract.
+# Analysing a contract and generating results for key terms
+In this tutorial we will learn how to create a ChatGPT agent that can extract key terms.
 
 ## Pre-requisites
 1. ChatGPT subscription
